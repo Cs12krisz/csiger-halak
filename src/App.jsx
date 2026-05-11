@@ -1,11 +1,12 @@
 import { Route, Routes, NavLink } from 'react-router-dom'
-import './App.css'
+//import './App.css'
 import Home from './pages/Home'
 import Fishes from './pages/Fishes'
 import NewFish from './pages/NewFish' 
 import SingleFish from './pages/SingleFish'
-function App() {
 
+
+function App() {
   return (
     <>
       <Routes>
