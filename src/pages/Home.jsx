@@ -4,7 +4,7 @@ function Home() {
     return (
     <>
         <h1>Üdvözöljük!</h1>
-        <NavLink to="#">Tovább a halakhoz!</NavLink>
+        <NavLink to="/halak">Tovább a halakhoz!</NavLink>
       </>
     )
 }

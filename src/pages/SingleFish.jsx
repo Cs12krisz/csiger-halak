@@ -23,7 +23,8 @@ function SingleFish() {
             <div>
                 <h2>{fish.nev}</h2>
                 <img src={`data:image/jpeg;base64,${fish.kep}`} alt={fish.nev}/>
-                <Link to="/halak" className="btn btn-primary">Vissza</Link>
+                <br />
+                <Link to="/halak" className="btn btn-primary"><i className="bi bi-arrow-left"></i>Vissza</Link>
             </div>
         </>
     )
