@@ -22,12 +22,11 @@ function Fishes() {
                 {fishes.map(fish => (
                     <div className='col-12 col-sm-6 col-md-4 col-lg-3' key={fish.id}>
                             <div className="card h-100 shadow-sm">
-                                <div className='card-header'>Név: {fish.nev}</div>
+                                <img className='card-img-top' src={`data:image/jpeg;base64,${fish.kep}`} alt={fish.nev}/>
                                 <div className="card-body">
-                                    <p>Faj: {fish.faj}</p>
-                                    <img className='img-fluid' src={`data:image/jpeg;base64,${fish.kep}`} alt={fish.nev}/>
-                                </div>
-                                <div className='card-footer'>
+                                    <h5 className='card-title'>{fish.nev}</h5>
+                                    <p className='card-text'>Faj: {fish.faj}</p>
+                                    <p className='card-text'>Méret: {fish.meretCm} cm</p>
                                     <Link to={`/hal/${fish.id}`} className="btn btn-primary">További adatok<i className="bi-text-paragraph"></i></Link>
                                 </div>
                             </div>
